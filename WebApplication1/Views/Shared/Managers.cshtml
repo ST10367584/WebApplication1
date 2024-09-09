@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Manager";
+}
+<h1>@ViewData["Title"]</h1>
+<div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Manager Claim Review</title>
+    </head>
+    <body>
+        <h2>Manager Review: Claim Details</h2>
+        <form action="/manage-claim" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="Gundo" readonly><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="Gundo@example.com" readonly><br><br>
+
+            <label for="hours">Hours Worked:</label>
+            <input type="number" id="hours" name="hours" value="40" readonly><br><br>
+
+            <label for="module">Module Name:</label>
+            <input type="text" id="module" name="module" value="PROG6212" readonly><br><br>
+
+            <label for="rate">Rate:</label>
+            <input type="text" id="rate" name="rate" value="30" readonly><br><br>
+
+            <label for="description">Manager's Comments:</label><br>
+            <textarea id="description" name="description" rows="4" cols="50" placeholder="Enter reason for approval or decline" required></textarea><br><br>
+
+            <button type="submit" name="action" value="accept">Accept Claim</button>
+            <button type="submit" name="action" value="decline">Decline Claim</button>
+        </form>
+    </body>
+</html>
+
+
+</div>
